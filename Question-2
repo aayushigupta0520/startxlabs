@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 2</title>
+</head>
+<body>
+        <script>
+        const tc = window.prompt("Enter number of testcases");
+
+for (let i = 0; i < tc; i++) {
+  const l = window.prompt("Enter l"),
+    r = window.prompt("Enter r");
+  const xor = findXORUtil(l, r);
+
+  window.alert(("answer", xor % 2 === 0 ? "Even" : "Odd"));
+}
+
+function findXOR(n) {
+  let mod = n % 4;
+
+  if (mod === 0) return n;
+  else if (mod === 1) return 1;
+  else if (mod === 2) return n + 1;
+  else if (mod === 3) return 0;
+  return 0;
+}
+
+function findXORUtil(l, r) {
+  return findXOR(l - 1) ^ findXOR(r);
+   }
+        </script>
+</body>
+</html>
