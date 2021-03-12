@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+     <title>Question 3</title>
+    </head>
+    <body>
+         <script>
+           const tc = window.prompt("Enter number of testcases");
+           let allString = [];
+           for (let i = 0; i < tc; i++) {
+              const string = window.prompt(`Enter String ${i}`);
+              allString.push(string);
+            }
+
+           allString = allString.sort(function (a, b) {
+           return a.localeCompare(b);
+           });
+
+           for (let i = 0; i < allString.length; i++) {
+           window.alert(`String :  ${i} ${allString[i]}`);
+           }
+        </script>
+    </body>
+    </html>
