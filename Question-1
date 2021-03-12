@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1</title>
+</head>
+<body>
+ <script>
+ var number = window.prompt("enter numberofseconds= ");
+ function numberofseconds(totalSeconds) {
+   var hours = Math.floor(totalSeconds / 3600);
+ totalSeconds %= 3600;
+ var minutes = Math.floor(totalSeconds / 60);
+ var seconds = totalSeconds % 60;
+ document.write("Hours = ",+hours);
+ document.write("\nMinutes = ",+minutes);
+ document.write("\nSecounds = ",+seconds);
+ }
+ numberofseconds(number);
+
+ </script>
+</body>
+</html>
